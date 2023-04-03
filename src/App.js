@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Tablero from './components/tablero';
 
 function App() {
 
@@ -27,23 +28,7 @@ function App() {
       <body>
         <div>
           <h1>Juego de la vieja</h1>
-          <div className='tablero'>
-            <div className='caja1'>
-              <div className='caja1a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja1a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja1a' onClick={clickCheck}>{jugador1}</div>
-            </div>
-            <div className='caja2'>
-              <div className='caja2a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja2a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja2a' onClick={clickCheck}>{jugador1}</div>
-            </div>
-            <div className='caja3'>
-              <div className='caja3a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja3a' onClick={clickCheck}>{jugador1}</div>
-              <div className='caja3a' onClick={clickCheck}>{jugador1}</div>
-            </div>
-          </div>
+          <Tablero clickCheck={clickCheck} jugador1={jugador1}/>
         </div>
       </body>
     </div>
