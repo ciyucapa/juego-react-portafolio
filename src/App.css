@@ -1,0 +1,35 @@
+.tablero {
+  background-color: gray;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid red;
+}
+
+.caja1, .caja2, .caja3 {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+}
+
+.caja1 {
+  border-top: 1px solid #fff;
+}
+
+.caja3, .caja2, .caja1 {
+  border-right: 1px solid #fff;
+}
+
+.caja1a, .caja2a, .caja3a {
+  width: 33%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid blanchedalmond;
+  color: #FFF;
+}
